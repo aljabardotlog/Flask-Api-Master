@@ -2,10 +2,10 @@ from flask import Flask, jsonify, request, g
 from flask_httpauth import  HTTPTokenAuth
 from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
 from adl_user.adl_user import get, get_id, put, post, delete
-from Ref.urusan import get_urusan, get_urusan_id
-from Ref.bidang import get_bidang, get_bidang_id
-from Ref.program import get_program, get_program_id
-from Ref.fungsi import get_fungsi, get_fungsi_id
+from DB_Example.Ref.urusan import get_urusan, get_urusan_id
+from DB_Example.Ref.bidang import get_bidang, get_bidang_id
+from DB_Example.Ref.program import get_program, get_program_id
+from DB_Example.Ref.fungsi import get_fungsi, get_fungsi_id
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'top secret!'
